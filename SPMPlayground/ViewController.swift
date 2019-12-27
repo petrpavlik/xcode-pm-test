@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import ReactiveSwift
 
 class ViewController: UIViewController {
+
+    let property = MutableProperty<Bool>(false)
 
     override func viewDidLoad() {
         super.viewDidLoad()

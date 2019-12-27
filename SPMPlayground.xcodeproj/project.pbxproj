@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,14 @@
 		4B62EF6023B6494B00F27542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B62EF5F23B6494B00F27542 /* Assets.xcassets */; };
 		4B62EF6323B6494B00F27542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B62EF6123B6494B00F27542 /* LaunchScreen.storyboard */; };
 		4B62EF6E23B6494B00F27542 /* SPMPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62EF6D23B6494B00F27542 /* SPMPlaygroundTests.swift */; };
+		4B62EF7A23B6495E00F27542 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62EF5A23B6494800F27542 /* ViewController.swift */; };
+		4B62EF7B23B6495E00F27542 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62EF5623B6494800F27542 /* AppDelegate.swift */; };
+		4B62EF7C23B6495E00F27542 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B62EF5823B6494800F27542 /* SceneDelegate.swift */; };
+		4B62EF7F23B6495E00F27542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B62EF6123B6494B00F27542 /* LaunchScreen.storyboard */; };
+		4B62EF8023B6495E00F27542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B62EF5F23B6494B00F27542 /* Assets.xcassets */; };
+		4B62EF8123B6495E00F27542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B62EF5C23B6494800F27542 /* Main.storyboard */; };
+		4B62EF8923B649CD00F27542 /* ReactiveSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4B62EF8823B649CD00F27542 /* ReactiveSwift */; };
+		4B62EF8C23B64A8200F27542 /* ReactiveSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4B62EF8B23B64A8200F27542 /* ReactiveSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,8 @@
 		4B62EF6923B6494B00F27542 /* SPMPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPMPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B62EF6D23B6494B00F27542 /* SPMPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPMPlaygroundTests.swift; sourceTree = "<group>"; };
 		4B62EF6F23B6494B00F27542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B62EF8523B6495E00F27542 /* SPMPlaygroundDebugServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMPlaygroundDebugServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B62EF8623B6495E00F27542 /* SPMPlayground copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SPMPlayground copy-Info.plist"; path = "/Users/petr/Documents/Development/Xcode/SPMPlayground/SPMPlayground copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B62EF8923B649CD00F27542 /* ReactiveSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +63,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B62EF7D23B6495E00F27542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B62EF8C23B64A8200F27542 /* ReactiveSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +83,8 @@
 				4B62EF5523B6494800F27542 /* SPMPlayground */,
 				4B62EF6C23B6494B00F27542 /* SPMPlaygroundTests */,
 				4B62EF5423B6494800F27542 /* Products */,
+				4B62EF8623B6495E00F27542 /* SPMPlayground copy-Info.plist */,
+				4B62EF8A23B64A8200F27542 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +93,7 @@
 			children = (
 				4B62EF5323B6494800F27542 /* SPMPlayground.app */,
 				4B62EF6923B6494B00F27542 /* SPMPlaygroundTests.xctest */,
+				4B62EF8523B6495E00F27542 /* SPMPlaygroundDebugServer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +121,13 @@
 			path = SPMPlaygroundTests;
 			sourceTree = "<group>";
 		};
+		4B62EF8A23B64A8200F27542 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +144,9 @@
 			dependencies = (
 			);
 			name = SPMPlayground;
+			packageProductDependencies = (
+				4B62EF8823B649CD00F27542 /* ReactiveSwift */,
+			);
 			productName = SPMPlayground;
 			productReference = 4B62EF5323B6494800F27542 /* SPMPlayground.app */;
 			productType = "com.apple.product-type.application";
@@ -136,6 +168,26 @@
 			productName = SPMPlaygroundTests;
 			productReference = 4B62EF6923B6494B00F27542 /* SPMPlaygroundTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B62EF7823B6495E00F27542 /* SPMPlaygroundDebugServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B62EF8223B6495E00F27542 /* Build configuration list for PBXNativeTarget "SPMPlaygroundDebugServer" */;
+			buildPhases = (
+				4B62EF7923B6495E00F27542 /* Sources */,
+				4B62EF7D23B6495E00F27542 /* Frameworks */,
+				4B62EF7E23B6495E00F27542 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPMPlaygroundDebugServer;
+			packageProductDependencies = (
+				4B62EF8B23B64A8200F27542 /* ReactiveSwift */,
+			);
+			productName = SPMPlayground;
+			productReference = 4B62EF8523B6495E00F27542 /* SPMPlaygroundDebugServer.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -165,12 +217,16 @@
 				Base,
 			);
 			mainGroup = 4B62EF4A23B6494800F27542;
+			packageReferences = (
+				4B62EF8723B649CD00F27542 /* XCRemoteSwiftPackageReference "ReactiveSwift" */,
+			);
 			productRefGroup = 4B62EF5423B6494800F27542 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4B62EF5223B6494800F27542 /* SPMPlayground */,
 				4B62EF6823B6494B00F27542 /* SPMPlaygroundTests */,
+				4B62EF7823B6495E00F27542 /* SPMPlaygroundDebugServer */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +249,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4B62EF7E23B6495E00F27542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B62EF7F23B6495E00F27542 /* LaunchScreen.storyboard in Resources */,
+				4B62EF8023B6495E00F27542 /* Assets.xcassets in Resources */,
+				4B62EF8123B6495E00F27542 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -211,6 +277,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B62EF6E23B6494B00F27542 /* SPMPlaygroundTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B62EF7923B6495E00F27542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B62EF7A23B6495E00F27542 /* ViewController.swift in Sources */,
+				4B62EF7B23B6495E00F27542 /* AppDelegate.swift in Sources */,
+				4B62EF7C23B6495E00F27542 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +510,40 @@
 			};
 			name = Release;
 		};
+		4B62EF8323B6495E00F27542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SPMPlayground copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.petrpavlik.SPMPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B62EF8423B6495E00F27542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SPMPlayground copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.petrpavlik.SPMPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -464,7 +574,40 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4B62EF8223B6495E00F27542 /* Build configuration list for PBXNativeTarget "SPMPlaygroundDebugServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B62EF8323B6495E00F27542 /* Debug */,
+				4B62EF8423B6495E00F27542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B62EF8723B649CD00F27542 /* XCRemoteSwiftPackageReference "ReactiveSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveCocoa/ReactiveSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B62EF8823B649CD00F27542 /* ReactiveSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B62EF8723B649CD00F27542 /* XCRemoteSwiftPackageReference "ReactiveSwift" */;
+			productName = ReactiveSwift;
+		};
+		4B62EF8B23B64A8200F27542 /* ReactiveSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B62EF8723B649CD00F27542 /* XCRemoteSwiftPackageReference "ReactiveSwift" */;
+			productName = ReactiveSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4B62EF4B23B6494800F27542 /* Project object */;
 }
