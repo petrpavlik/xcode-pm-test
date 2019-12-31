@@ -1,4 +1,5 @@
 language: objective-c
+osx_image: xcode11.3
 xcode_project: SPMPlayground.xcodeproj # path to your xcodeproj folder
 xcode_scheme: SPMPlaygroundTests
 xcode_destination: platform=iOS Simulator,OS=13.1,name=iPad Pro (9.7-inch)
